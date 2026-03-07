@@ -81,7 +81,7 @@ export default function Home() {
         .ach-body { font-family: 'Lora', serif; font-size: 13px; color: var(--charcoal-light); line-height: 1.5; }
 
         #gallery { background: var(--sand); padding: 120px 60px; }
-        .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: 280px 280px; gap: 4px; max-width: 1100px; margin: 0 auto; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: 280px 280px 280px; gap: 4px; max-width: 1100px; margin: 0 auto; }
         .gallery-cell { background: #c4b4a0; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; cursor: pointer; transition: opacity 0.3s; }
         .gallery-cell:hover { opacity: 0.85; }
         .gallery-cell:nth-child(1) { grid-column: 1 / 3; grid-row: 1; }
@@ -90,6 +90,9 @@ export default function Home() {
         .gallery-cell:nth-child(4) { grid-column: 1; grid-row: 2; }
         .gallery-cell:nth-child(5) { grid-column: 2; grid-row: 2; }
         .gallery-cell:nth-child(6) { grid-column: 3 / 5; grid-row: 2; }
+        .gallery-cell:nth-child(7) { grid-column: 1; grid-row: 3; }
+        .gallery-cell:nth-child(8) { grid-column: 2 / 4; grid-row: 3; }
+        .gallery-cell:nth-child(9) { grid-column: 4; grid-row: 3; }
         .gallery-ph { display: flex; flex-direction: column; align-items: center; gap: 10px; opacity: 0.5; }
         .gallery-ph span { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.3em; color: var(--wine); text-transform: uppercase; }
 
@@ -106,10 +109,6 @@ export default function Home() {
         .mission-list li { padding: 16px 24px; border-bottom: 1px solid rgba(198,167,94,0.2); border-right: 1px solid rgba(198,167,94,0.2); font-size: 15px; color: var(--charcoal-light); line-height: 1.6; display: flex; gap: 14px; align-items: flex-start; }
         .mission-list li:nth-child(even) { border-right: none; }
         .mission-list li::before { content: '—'; color: var(--gold); flex-shrink: 0; margin-top: 2px; }
-        .milestone-strip { background: var(--wine); margin: 0 -60px; padding: 50px 60px; display: flex; align-items: center; justify-content: center; gap: 60px; }
-        .milestone-date { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 300; color: var(--gold); line-height: 1; margin-bottom: 8px; }
-        .milestone-label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.25em; color: rgba(246,241,232,0.6); text-transform: uppercase; }
-        .milestone-sep { width: 1px; height: 50px; background: rgba(198,167,94,0.3); }
         .ku-principle { text-align: center; padding: 60px 0 0; }
         .ku-principle-quote { font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 3vw, 30px); font-style: italic; font-weight: 300; color: var(--wine); line-height: 1.5; margin-bottom: 16px; }
         .ku-principle-sub { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase; }
@@ -247,7 +246,7 @@ export default function Home() {
         <h2 className="section-title reveal reveal-delay-1">Gallery</h2>
         <div className="gold-rule reveal reveal-delay-2"></div>
         <div className="gallery-grid reveal">
-          {['Performance', 'Stage', 'Portrait', 'Workshop', 'Festival', 'International Tour'].map((label, i) => (
+          {['Performance', 'Stage', 'Portrait', 'Workshop', 'Festival', 'International Tour', 'Recital', 'Rehearsal', 'Award Ceremony'].map((label, i) => (
             <div className="gallery-cell" key={i}>
               <div className="gallery-ph">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(110,30,46,0.5)" strokeWidth="1">
@@ -262,16 +261,16 @@ export default function Home() {
 
       {/* KALA UNNATI */}
       <section id="kala-unnati">
-        <div className="ku-watermark">कला</div>
+        <div className="ku-watermark"><span>Kala</span><br/><span>उन्नति</span></div>
         <p className="section-kicker reveal">The Institution</p>
         <h2 className="section-title reveal reveal-delay-1">
           Kala Unnati<br />
-          <span style={{ fontSize: '0.55em', letterSpacing: '0.08em', fontStyle: 'italic', color: 'var(--charcoal-light)' }}>Dance Foundation Trust</span>
+          <span style={{ fontSize: '0.55em', letterSpacing: '0.08em', fontStyle: 'italic', color: 'var(--charcoal-light)' }}>Dance Foundation</span>
         </h2>
         <div className="gold-rule reveal reveal-delay-2"></div>
         <div className="ku-inner">
           <p className="ku-body reveal">
-            <strong>Kala Unnati Dance Foundation Trust</strong> is a Public Charitable Trust established under the Indian Trust Act, 1882, founded on 23rd March 2023. Rooted in tradition and driven by artistic excellence, it is dedicated to the promotion, preservation, and advancement of Odissi dance, music, and Indian performing arts — nurturing talent, discipline, creativity, and spiritual expression through movement.
+            <strong>Kala Unnati Dance Foundation</strong> is an institution dedicated to the promotion, preservation, and advancement of Odissi dance, music, and Indian performing arts. Founded on 23rd March 2023 in Bhubaneswar, Odisha, it serves as a cultural platform nurturing talent, discipline, creativity, and spiritual expression through the art of movement.
           </p>
           <div className="ku-columns reveal">
             <div>
@@ -300,25 +299,9 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className="milestone-strip reveal">
-          {[
-            { date: '2023', label: 'Year Founded' },
-            { date: '23 March', label: 'Established' },
-            { date: 'Bhubaneswar', label: 'Registered, Odisha' },
-            { date: 'Public Trust', label: 'Indian Trust Act, 1882' },
-          ].map((m, i) => (
-            <>
-              {i > 0 && <div className="milestone-sep" key={`sep-${i}`}></div>}
-              <div className="milestone-item" key={i}>
-                <div className="milestone-date">{m.date}</div>
-                <div className="milestone-label">{m.label}</div>
-              </div>
-            </>
-          ))}
-        </div>
         <div className="ku-principle reveal">
           <p className="ku-principle-quote">&ldquo;Preserving Tradition. Inspiring Excellence. Advancing Art.&rdquo;</p>
-          <span className="ku-principle-sub">Kala Unnati Dance Foundation Trust</span>
+          <span className="ku-principle-sub">Kala Unnati Dance Foundation</span>
         </div>
       </section>
 
@@ -343,7 +326,7 @@ export default function Home() {
             </div>
             <div className="contact-item">
               <div className="contact-label">Institution</div>
-              <span className="contact-value" style={{ cursor: 'default', fontSize: 16 }}>Kala Unnati Dance Foundation Trust</span>
+              <span className="contact-value" style={{ cursor: 'default', fontSize: 16 }}>Kala Unnati Dance Foundation</span>
             </div>
           </div>
           <div className="social-row reveal">
@@ -379,7 +362,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer>
         <span className="footer-name">Y. Asha Kumari</span>
-        <span className="footer-copy">© 2025 Kala Unnati Dance Foundation Trust. All rights reserved.</span>
+        <span className="footer-copy">© 2025 Kala Unnati Dance Foundation. All rights reserved.</span>
         <div className="footer-links">
           <a href="#about">About</a>
           <a href="#kala-unnati">Kala Unnati</a>
