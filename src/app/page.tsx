@@ -214,7 +214,7 @@ export default function Home() {
           </div>
           <div className="reveal reveal-delay-1">
             <p className="about-intro">A lifelong devotion to Odissi — one of India&apos;s most ancient classical dance forms.</p>
-            <p className="about-body">Y. Asha Kumari began her journey at the tender age of 7, under the tutelage of Guru Shri Manoranjan Pradhan. She deepened her craft at the prestigious <strong>Orissa Dance Academy, Bhubaneswar</strong>, under Guru Shri Bichitrananda Swain, guided by the watchful eye of Odissi doyen, the late Padmashree Guru Shri Gangadhar Pradhan.</p>
+            <p className="about-body">Y. Asha Kumari began her journey at the tender age of 7, under the tutelage of Guru Shri Manoranjan Pradhan. She deepened her craft at the prestigious <strong>Orissa Dance Academy, Bhubaneswar</strong>, under Guru Shri Bichitrananda Swain, &amp; Padmashree Guru Aruna Mohanty, and under the watchful eye of Odissi doyen, the late Padmashree Guru Shri Gangadhar Pradhan.</p>
             <p className="about-body">She holds a <strong>Master&apos;s Degree in Odissi Dance</strong> from Pracheen Kala Kendra, Chandigarh — a testament to her commitment to both technical rigour and spiritual depth.</p>
             <p className="about-body">Her artistry has graced India&apos;s most revered stages — the <strong>Khajuraho Dance Festival, Mukteshwar Dance Festival, Konark Festival, Puri Beach Festival, Rashtriya Sanskrit Mahotsav, IIDF Delhi, International Odissi Dance Festival,</strong> and <strong>G20</strong> cultural celebrations. Internationally, she has represented India in <strong>Vietnam, Switzerland, Mauritius, Russia, North Korea, Sri Lanka, UK, Germany, Italy, Madagascar, Mexico, USA, Canada, Réunion,</strong> and <strong>Dubai</strong>, among others.</p>
             <p className="about-body">Today, Asha carries this living tradition forward — teaching students across India, conducting workshops for young rural children under <strong>Spic Macay</strong>, and serving as the Founder &amp; Director of Kala Unnati Dance Foundation.</p>
@@ -270,7 +270,7 @@ export default function Home() {
         <div className="gold-rule reveal reveal-delay-2"></div>
         <div className="ku-inner">
           <p className="ku-body reveal">
-            <strong>Kala Unnati Dance Foundation</strong> is an institution dedicated to the promotion, preservation, and advancement of Odissi dance, music, and Indian performing arts. Founded on 23rd March 2023 in Bhubaneswar, Odisha, it serves as a cultural platform nurturing talent, discipline, creativity, and spiritual expression through the art of movement.
+            <strong>Kala Unnati Dance Foundation</strong> is an institution dedicated to the promotion, preservation, and advancement of Odissi dance, music, and Indian performing arts. It serves as a cultural platform nurturing talent, discipline, creativity, and spiritual expression through the art of movement.
           </p>
           <div className="ku-columns reveal">
             <div>
@@ -288,13 +288,8 @@ export default function Home() {
             <ul className="mission-list">
               {[
                 'Promote and spread Odissi dance nationally and internationally',
-                'Provide structured training in Pada Bheda, Taal, and Abhinaya',
-                'Organise festivals, workshops, and cultural events',
-                'Foster research in Indian dance, drama, and music',
-                'Encourage artistic collaboration and cultural exchange',
-                'Train performers, educators, and researchers',
-                'Establish library and archival resources for the arts',
-                'Publish literature and support creative productions',
+                'Dedicated to preserving and promoting the classical dance tradition of Odissi.',
+                
               ].map((item, i) => <li key={i}>{item}</li>)}
             </ul>
           </div>
