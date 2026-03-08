@@ -287,9 +287,13 @@ export default function Home() {
             <div className="mission-title">What We Do</div>
             <ul className="mission-list">
               {[
-                'Promote and spread Odissi dance nationally and internationally',
-                'Dedicated to preserving and promoting the classical dance tradition of Odissi.',
-                
+                "Dedicated to preserving and promoting the classical dance tradition of Odissi.",
+                "Nurturing young talents with disciplined training, creativity, and cultural values.",
+                "Encouraging students to grow as confident and expressive performers.",
+                "Conducting workshops, masterclasses, and lecture demonstrations.",
+                "Creating opportunities for students to learn from renowned gurus and artists.",
+                "Spreading the beauty, spirituality, and heritage of Odissi worldwide.",
+                "Committed to building the next generation of dedicated classical dancers."
               ].map((item, i) => <li key={i}>{item}</li>)}
             </ul>
           </div>
